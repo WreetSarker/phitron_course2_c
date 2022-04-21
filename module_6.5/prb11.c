@@ -23,6 +23,19 @@ int main(){
 
     */
 
+    int a, b;
+    scanf("%d %d", &a, &b);
+    int count = 0;
+    for(int i = 1; i <= b; i++){
+        if(b % (a*i) == 0){
+            printf("%d ", a*i);
+            count +=1;
+        }
+    }
+    if (count == 0){
+        printf("No such integers\n");
+    }
+
     return 0;
 }
 

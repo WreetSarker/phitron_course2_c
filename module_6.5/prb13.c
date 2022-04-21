@@ -20,6 +20,22 @@ int main(){
 
     */
 
+    int a, b, c;
+    printf("Input first side: ");
+    scanf("%d", &a);
+
+    printf("Input second side: ");
+    scanf("%d", &b);
+
+    printf("Input third side: ");
+    scanf("%d", &c);
+
+    if ((a+b) > c && (b+c) > a && (c+a)> b){
+        printf("Triangle is valid.\n");
+    }else{
+        printf("Invalid triangle.\n");
+    }
+
     return 0;
 }
 

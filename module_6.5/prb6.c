@@ -16,7 +16,6 @@ int main(){
 
     Temp >=40 then Its Very Hot
 
-
     Test Data :
 
         42
@@ -25,6 +24,21 @@ int main(){
 
         Its very hot.
     */
+    int temp;
+    printf("Enter temperature: ");
+    scanf("%d", &temp);
+
+    if(temp>= 0 && temp <10){
+        printf("Very cold weather.\n");
+    }else if(temp>= 10 && temp <20){
+        printf("Cold weather.\n");
+    }else if(temp>= 20 && temp <30){
+        printf("Normal in temp.\n");
+    }else if(temp>= 30 && temp <40){
+        printf("It's Hot.\n");
+    }else{
+        printf("It's very hot.");
+    }
 
     return 0;
 }

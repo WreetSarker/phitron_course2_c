@@ -17,17 +17,28 @@ int main(){
         Input: 5
 
         Output:
-
             1
-
             2
-
             Fizz
-
             4
-
             Buzz
     */
+    int N;
+    printf("Enter number of lines: ");
+    scanf("%d", &N);
+    int val;
+    for (int i = 1; i <= N; i++){
+        scanf("%d", &val);
+        if(val%3==0 && val %5 != 0){
+            printf("Fizz\n");
+        }else if(val%5 ==0 && val%3 != 0){
+            printf("Buzz\n");
+        }else if(val%3 == 0 && val%5 == 0){
+            printf("FizzBuzz\n");
+        }else{
+            printf("%d", i);
+        }
+    }
 
     return 0;
 }

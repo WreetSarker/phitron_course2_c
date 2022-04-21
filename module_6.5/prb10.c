@@ -21,6 +21,13 @@ int main(){
         Number is : 5 and cube of the 5 is :125
 
     */
+    int N;
+    printf("Input number of terms: ");
+    scanf("%d", &N);
+
+    for(int i = 1; i <= N; i++){
+        printf("Number is : %d and cube of %d is : %d\n", i, i, i*i*i);
+    }
 
     return 0;
 }
